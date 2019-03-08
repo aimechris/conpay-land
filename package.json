@@ -1,7 +1,7 @@
 {
   "name": "conpay",
   "version": "1.0.0",
-  "description": "",
+  "description": "CONPAY Landing Page",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +12,9 @@
   "devDependencies": {
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
+  },
+  "engines": {
+    "node": "10.x"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
