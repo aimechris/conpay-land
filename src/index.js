@@ -1,16 +1,21 @@
-var $ = require("jquery");
-$('form').submit(function(event){
-  event.preventDefault();
-  $.ajax({
-    url:'www.youtube.com',
-    type:'POST',
-    data: {
-      email: 'rty@gmail.com'
-    },
-    success: function(response){
-      console.log(response);
-    }
-  });
-})
+var $ = require ('jquery');
+
+
 console.log($('form'));
-console.log("It's Working");
+console.log("it's working!!!");
+
+$('form').submit(function(event){
+    var userEmail = $('#email').val();
+    console.log(userEmail);
+    event.preventDefault();
+    $.ajax({
+      url: '/',
+      type: 'POST',
+      data: {
+        email: userEmail
+      },
+      success: function(response){
+        console.log(response);
+      }
+    });
+});
